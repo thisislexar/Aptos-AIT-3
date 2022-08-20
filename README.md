@@ -26,3 +26,4 @@
 - [Fullnode](https://github.com/thisislexar/Aptos-AIT-3/blob/main/fullnode.md)
 
 
+# Güncellemeleri kaçırmamak için [GitHub](https://github.com/thisislexar) ve [Twitter](https://twitter.com/thisislexar)'ı takipte kalın. Lexar out✌️
