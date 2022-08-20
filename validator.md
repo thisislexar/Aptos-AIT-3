@@ -33,7 +33,7 @@
   ## Cüzdanı kurduktan sonra [AIT-3 için Kayıt Sayfası](https://aptoslabs.com/it3)'na gidelim ve cüzdanımızı bağlayalım.
   ![image](https://user-images.githubusercontent.com/101462877/185747537-b13126c8-94af-4a5c-9de4-01ef62bcd5dc.png)
 
-  # 3. adım olarak yine [AIT-3 için Kayıt Sayfası](https://aptoslabs.com/it3)'na gidelim ve anketi dolduralım. Anketi özenli bir şekilde doldurduğunuza emin olun
+  # 3. adım olarak yine [AIT-3 için Kayıt Sayfası](https://aptoslabs.com/it3)'na gidelim ve anketi dolduralım. Anketi özenli bir şekilde doldurduğunuza emin olun.
   
   ![image](https://user-images.githubusercontent.com/101462877/185748018-f8dfe635-9a1b-48d5-89d8-b32bb5dcff05.png)
   
@@ -109,7 +109,7 @@ docker logs -f testnet-validator-1 --tail 50
 curl 127.0.0.1:9101/metrics 2> /dev/null | grep aptos_state_sync_version | grep type
 ```
   
-Node'u tekrar başlatmak için kod:
+# Node'u tekrar başlatmak için kod:
 ```
 docker restart testnet-validator-1
 ```  
