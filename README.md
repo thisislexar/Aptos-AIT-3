@@ -12,6 +12,14 @@
 - [Twitter](https://twitter.com/AptosLabs)
 - [Discord](https://discord.gg/AaZk5MBQa3)
 
+# Aptos için önemli tarihler:
+
+- 19 Ağustos: Kayıt Başlangıcı
+- 26 Ağustos: Kayıt Bitişi
+- 27 Ağustos: Seçilen Validatorlerin Açıklanması
+- 30 Ağustos: Seçilen Validatorler için AIT-3 Başlangıcı
+- 9 Eylül: AIT-3 Bitişi
+
 # Kurulum linkleri:
 
 - [Validator](https://github.com/thisislexar/Aptos-AIT-3/blob/main/validator.md)
