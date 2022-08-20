@@ -63,6 +63,7 @@ sudo ufw enable
  ```
    ```
 ufw allow 80
+ufw allow 8080
  ```
   
 
