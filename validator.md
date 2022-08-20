@@ -56,6 +56,18 @@
  ```
 source $HOME/.bash_profile
  ```
+ 
+  ## Ayrıca bazı portları açmamız gerekiyor. Bunları açalım.
+   ```
+sudo ufw enable
+ ```
+   ```
+ufw allow 80
+ ```
+  
+
+  
+  
   
  ## Node'u kontrol etmek için [bu siteye](https://node.aptos.zvalid.com/) gidelim.
   
@@ -80,7 +92,7 @@ Bu şekilde bir görüntü varsa başarılı bir şekilde kurmuşuz demektir.
   ```
 cat ~/$WORKSPACE/keys/public-keys.yaml
   ```
-  Ardından karşımıza çıkan dosyadaki veriler ile kayıt formunu dolduralım. Hangi boşluk için hangi veriyi girmeniz gerektiğini aşağıya bırakıyorum.
+  Ardından karşımıza çıkan dosyadaki veriler ile kayıt formunu dolduralım. Hangi boşluk için hangi veriyi girmeniz gerektiğini aşağıya bırakıyorum. Ayrıca, API PORT'u `8080` olarak geliyor, onu `80` olarak değiştirin.
   
   ![image](https://user-images.githubusercontent.com/101462877/185748364-40ef482b-a3e5-4825-a7c2-19b3fbe7478f.png)
   
