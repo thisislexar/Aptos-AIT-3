@@ -1,6 +1,6 @@
 <h1 align="center">Aptos AIT-3 için Fullnode Kurulumu
   
-# Öncelikle şunu belirteyim, fullnode kurmak zorunlu değil. Optional olarak belirtilmiş, fakat yine de rehber hazırladım. Ayrıca hem Fullnode hem de validator kuracaksanız, farklı serverlarda kurmanız önerilmiş. Öyle yapın.
+# Öncelikle şunu belirteyim, fullnode kurmak zorunlu değil. Optional olarak belirtilmiş, fakat yine de rehber hazırladım. Ayrıca hem Fullnode hem de validator kuracaksanız, farklı serverlarda kurmanız önerilmiş. Öyle yapın. Sorularınız için: [LossNode Chat](https://t.me/LossNode)
 
   
  # Detaylar: [Aptos Fullnode](https://aptos.dev/nodes/full-node/fullnode-for-devnet)
