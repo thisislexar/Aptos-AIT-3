@@ -8,7 +8,7 @@
 
 - [Website](https://aptoslabs.com/)
 - [Resmi doküman](https://aptos.dev/nodes/ait/ait-3)
-- [Explorer](https://status.devnet.aptos.dev/)
+- [Explorer](https://explorer.devnet.aptos.dev/)
 - [Twitter](https://twitter.com/AptosLabs)
 - [Discord](https://discord.gg/AaZk5MBQa3)
 
