@@ -62,11 +62,63 @@ nano /root/aptos-fullnode/fullnode.yaml
   - Enter tuşlarına basıyoruz.
 
   
-  Ardından `genesis` ve `waypoint.txt` dosyalarını indirelim.
+Bu kısımda WinSCP ile Validator node'umuza bağlanıp gerekli bağlantıları yapmamız gerekiyor. Bunun için ilk önce [Validator Node Kurulumu](https://github.com/thisislexar/Aptos-AIT-3/blob/main/validator.md)'na gidip Validator node'unuzu kurun. Ardından aşağıdaki işlemlerle devam edin.
+
+  # WinSCP (mac kullanıyorsanız Cyberduck)'yi açalım. Eğer WinSCP bilgisayarınızda yüklü değilse [buradan](https://winscp.net/eng/index.php) indirebilirsiniz. WinSCP ile Validator node'umuza bağlanalım.
+  ![image](https://user-images.githubusercontent.com/101462877/185781466-fb1e7de3-8caa-4d93-9719-7f505ebe2fa7.png)
   
+Aşağıdaki görselde gördüğüz gibi `keys`, `genesis.blob` ve `waypoint.txt` dosyalarını bilgisayarımıza kopyalayalım, bunları Fullnode'umuza aktaracağız. 
+  
+  ![image](https://user-images.githubusercontent.com/101462877/185781618-a49de870-4cb7-45db-8b4d-ef30a43cbc9c.png)
+  
+  WinSCP ile bu sefer Fullnode'umuza bağlanalım, kopyaladığımız dosyaları Fullnode içerisindeki `aptos-fullnode` dosyasının içine aktaralım.
+  ![image](https://user-images.githubusercontent.com/101462877/185781722-1f6d36d5-7a69-4ebe-b0a7-2a61ac474ea9.png)
+
+  
+ # Ardından terminalimize geri dönelim ve node'u başlatalım.
   ```
-curl -O https://devnet.aptoslabs.com/genesis.blob
-curl -O https://devnet.aptoslabs.com/waypoint.txt
+docker-compose up -d
+```
+  ![image](https://user-images.githubusercontent.com/101462877/185781830-96c04be5-0a2c-4412-800f-84ec0330022e.png)
+
+  Bu kısım biraz uzun sürebilir, tamamlanmasını bekleyelim.
+  
+  # Şimdi tekrar Validator node'umuza terminalden bağlanalım ve Fullnode'umuzu Validator node'umuza bağlayalım.
+```
+aptos genesis set-validator-configuration \
+    --local-repository-dir ~/$WORKSPACE \
+    --username $NODENAME \
+    --owner-public-identity-file ~/$WORKSPACE/keys/public-keys.yaml \
+    --validator-host $PUBLIC_IP:6180 \
+    --stake-amount 100000000000000 \
+    --full-node-host <FULLNODE_SUNUCU_IP>:6182
+```
+- Bu kısımda `<FULLNODE_SUNUCU_IP>` kısmını FULLNODE SUNUCU IP'niz ile değiştirerek girin.
+  
+  ![image](https://user-images.githubusercontent.com/101462877/185782353-f2e49169-4215-43da-b522-870ee987291a.png)
+
+  Görseldeki gibi `"Result": "Success"` çıktısını aldıysanız olmuştur.
+  # Ardından Validator node'umuzu aşağıdaki komutla tekrar başlatalım.
+  
+```
+cd ~/$WORKSPACE
+docker-compose restart
+```
+  # Kurulum bu kadardı, aşağıya Fullnode için gerekli olabilecek bazı komutlar bırakıyorum.
+  
+  ## Fullnode'unuzu tekrar başlatmak için kod:
+  ```
+  docker restart aptos-fullnode-fullnode-1 
+  ```
+  
+  ## Fullnode'unuzda logları kontrol etmek için kod:
+
+```
+docker logs -f aptos-fullnode-fullnode-1 --tail 50
 ```
 
-Bu kısımda WinSCP ile Validator node'umuza bağlanıp gerekli bağlantıları yapmamız gerekiyor. Bunun için ilk önce [Validator Node Kurulumu](https://github.com/thisislexar/Aptos-AIT-3/blob/main/validator.md)'na gidip Validator node'unuzu kurun. Ardından aşağıdaki işlemlerle devam edin.
+# Senkronize durumunu kontrol etmek için kod:
+
+```
+curl 127.0.0.1:9101/metrics 2> /dev/null | grep aptos_state_sync_version | grep type
+``` 
