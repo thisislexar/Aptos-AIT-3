@@ -83,6 +83,12 @@ Aşağıdaki görselde gördüğüz gibi `keys`, `genesis.blob` ve `waypoint.txt
 
   Bu kısım biraz uzun sürebilir, tamamlanmasını bekleyelim.
   
+  ## NOT: Burada aşağıdaki görseldeki gibi bir hata alırsanız aşağıdaki komutu girin tekrar deneyin.
+   ```
+ apt  install docker-compose
+```
+  ![image](https://user-images.githubusercontent.com/101462877/185795105-e19b0530-a302-4c27-8b26-848583315241.png)
+  
   # Şimdi tekrar Validator node'umuza terminalden bağlanalım ve Fullnode'umuzu Validator node'umuza bağlayalım.
 ```
 aptos genesis set-validator-configuration \
