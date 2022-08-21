@@ -75,14 +75,9 @@ ufw allow 8080
   
   
   
- ## Node'u kontrol etmek için [bu siteye](https://node.aptos.zvalid.com/) gidelim.
+ ## Node'u kontrol etmek için [bu siteye](https://ait.aptos-node.info/) gidelim. Görselde gördüğünüz gibi Validator Node'umuzun sunucu IP'sini yazalım ve API port'unu 80 olarak girelim.
   
-  
-  ![image](https://user-images.githubusercontent.com/101462877/185746854-15603254-b790-4e5d-80ef-d99228f6ff40.png)
-
-  Bu kısıma Validator Node'umuzun sunucu IP'sini yazalım ve kontrol edelim.
-  
-  ![image](https://user-images.githubusercontent.com/101462877/185746873-b28e0be3-61a5-439c-ac91-49c651e7b27b.png)
+  ![image](https://user-images.githubusercontent.com/101462877/185793794-020738f2-cd22-4419-9e5b-83fa5269974d.png)
   
 Bu şekilde bir görüntü varsa başarılı bir şekilde kurmuşuz demektir.
   
