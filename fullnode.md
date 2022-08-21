@@ -77,7 +77,7 @@ Aşağıdaki görselde gördüğüz gibi `keys`, `genesis.blob` ve `waypoint.txt
   
  # Ardından terminalimize geri dönelim ve node'u başlatalım.
   ```
- docker run --pull=always --rm -p 8080:8080 -p 9101:9101 -p 6180:6180 -v $(pwd):/opt/aptos/etc -v $(pwd)/data:/opt/aptos/data --workdir /opt/aptos/etc --name=aptos-fullnode aptoslabs/validator:devnet aptos-node -f /opt/aptos/etc/public_full_node.yaml
+ docker-compose up -d
 ```
   ![image](https://user-images.githubusercontent.com/101462877/185781830-96c04be5-0a2c-4412-800f-84ec0330022e.png)
 
