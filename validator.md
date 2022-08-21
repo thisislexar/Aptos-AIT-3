@@ -44,6 +44,11 @@
   
   # 4. adımda node kurulumumuzu gerçekleştiriyoruz ve node'umuzu kayıt ediyoruz. Script ile kuracağız çünkü manuel işlemler biraz karmaşık. Hata almadan kurulum yapmak amacıyla script kullanacağız.
   
+  ## Root yetkisi alalım.
+  ```
+  sudo su
+  cd
+  ```
   
  ## Script kod ile direkt node'umuzu kuruyoruz.
   
