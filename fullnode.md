@@ -51,9 +51,9 @@ wget -qO fullnode.yaml https://raw.githubusercontent.com/aptos-labs/aptos-core/m
 ```
 nano /root/aptos-fullnode/fullnode.yaml
 ```
-![image](https://user-images.githubusercontent.com/101462877/185746263-f8bcac74-0650-40a0-ab0d-4ac024dafd26.png)
+![image](https://user-images.githubusercontent.com/101462877/185783294-1524e5f8-043f-494e-8846-d3f5c2faadb4.png)
   
- Dosyanın içi böyle görünecektir, görselde anlatıldığı gibi ilgili kısmı kendi sunucu IP adresimiz ile değiştiriyoruz.
+ Dosyanın içi böyle görünecektir, görselde anlatıldığı gibi ilgili kısmı kendi VALİDATOR NODE SUNUCU IP adresimiz ile değiştiriyoruz.
   
   Ardından dosyayı kapatmak için sırasıyla:
   
