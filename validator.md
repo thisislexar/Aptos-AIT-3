@@ -105,7 +105,12 @@ cat ~/$WORKSPACE/keys/public-keys.yaml
 - `VALIDATOR NETWORK KEY`: Yukarıdaki komutla terminalde gördüğümüz validator_network_public_key
   
   
-## Bu verileri doğru bir şekilde girdiğimize emin olduktan sonra `Validate Node` butonuna tıklayalım. Ardından eğer node'unuz Aptos takımı tarafından seçilirse mail alacaksınız ve sizden KYC istenecek. Bu yüzden süreç boyunca mail'lerinizi sık sık kontrol etmelisiniz.
+## Bu verileri doğru bir şekilde girdiğimize emin olduktan sonra `Validate Node` butonuna tıklayalım. Ardından eğer node'unuz Aptos takımı tarafından seçilirse mail alacaksınız. Bu yüzden süreç boyunca mail'lerinizi sık sık kontrol etmelisiniz.
+  
+  
+  # Son adımda kimlik doğrulaması yapmamız gerekiyor, bunun için aşağıdaki görselde gördüğünüz butona tıklıyoruz ve bizi yönlendirdiği sayfada kimliğimizi doğruluyoruz.
+  ![image](https://user-images.githubusercontent.com/101462877/185860116-f76ff713-1082-4636-90d2-da430381a0e9.png)
+
 
 # Kurulum bu kadardı, validatör olarak kullanabileceğiniz bazı komutları aşağıya bırakıyorum. Ayrıca optional olarak Fullnode yüklemek isterseniz [Aptos Fullnode Kurulumu](https://github.com/thisislexar/Aptos-AIT-3/blob/main/fullnode.md)'na göz atabilirsiniz. 
 
