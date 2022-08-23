@@ -75,7 +75,7 @@ ufw allow 8080
   
   
   
- ## Node'u kontrol etmek için [bu siteye](https://ait.aptos-node.info/) gidelim. Görselde gördüğünüz gibi Validator Node'umuzun sunucu IP'sini yazalım ve API port'unu 80 olarak girelim.
+ ## Node'u kontrol etmek için [bu siteye](https://ait.aptos-node.net/) gidelim. Görselde gördüğünüz gibi Validator Node'umuzun sunucu IP'sini yazalım ve API port'unu 80 olarak girelim.
   
   ![image](https://user-images.githubusercontent.com/101462877/185793794-020738f2-cd22-4419-9e5b-83fa5269974d.png)
   
